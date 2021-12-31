@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:context="http://www.springframework.org/schema/context"
+  xsi:schemaLocation="
+    http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd">
+
+  <bean id="c" class="com.stepinfo.model.Collaborateur" scope="prototype">
+    <property name="nom" value="Nom"/>
+    <property name="prenom" value="Prénom"/>
+  </bean>
+
+  <bean id="p" class="com.stepinfo.model.Periode" scope="prototype">
+    <property name="dateDebut" value="06-05-2010"/>
+    <property name="nbJours" value="2"/>
+  </bean>
+
+  <context:component-scan base-package="com.stepinfo"/>
+
+</beans>
