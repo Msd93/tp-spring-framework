@@ -3,10 +3,17 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
 
-	<bean id="demandeConge" class="com.ecoalis.beanfactory.DemandeConge">
-		<!-- <constructor-arg name="name" value="Hello! My name is Java" />
-		<constructor-arg name="age" value="18" /> 
-		<constructor-arg index="0" value="Nom"></constructor-arg> -->
+	<bean id="demandeConge" class="com.ecoalis.model.DemandeConge">
+		<property name="collaborateur" ref="c"></property>
+		<property name="periode" ref="p"></property>
+	</bean>
+	<bean id="c" class="com.ecoalis.model.Collaborateur">
+		<property name="nom" value="DIALLO"></property>
+		<property name="prenom" value="MS"></property>
+	</bean>
+	<bean id="p" class="com.ecoalis.model.Periode">
+		<property name="dateDebut" value="31-12-2021"></property>
+		<property name="nbJours" value="5"></property>
 	</bean>
 
 </beans>

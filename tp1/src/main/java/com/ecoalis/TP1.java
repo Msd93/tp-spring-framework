@@ -5,7 +5,7 @@ import org.springframework.beans.factory.xml.XmlBeanFactory;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
 
-import com.ecoalis.beanfactory.DemandeConge;
+import com.ecoalis.model.DemandeConge;
 
 public class TP1 {
 
@@ -17,8 +17,6 @@ public class TP1 {
 	    Resource res = new ClassPathResource("applicationContext.xml");
 	    BeanFactory factory = new XmlBeanFactory(res);
 	    DemandeConge demandeConge = (DemandeConge) factory.getBean("demandeConge");
-	    demandeConge.setName("Alioune GAYE");
-	    demandeConge.setValue("Congé JANVIER");
 	    System.out.println(demandeConge.toString());
    }
 
