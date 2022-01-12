@@ -6,9 +6,9 @@
     http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
     http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd">
 
-  <bean id="demandeConge" class="com.ecoalis.model.DemandeConge" scope="prototype">
-    <property name="collaborateur" ref="c"></property>
-    <property name="periode" ref="p"></property>
+  <bean autowire = "byName"  id="demandeConge" class="com.ecoalis.model.DemandeConge" scope="prototype">
+    <!--  property name="collaborateur" ref="c"></property-->
+    <!--  property name="periode" ref="p"></property-->
   </bean>
 
   <bean id="c" class="com.ecoalis.model.Collaborateur" scope="prototype">
@@ -21,7 +21,7 @@
     <property name="nbJours" value="2"/>
   </bean>
 
-  <bean id="demandeCongeSansModificateurs" class="com.ecoalis.model.DemandeCongeSansModificateurs">
+  <bean autowire = "constructor" id="demandeCongeSansModificateurs" class="com.ecoalis.model.DemandeCongeSansModificateurs">
     <constructor-arg ref="p" />
     <constructor-arg ref="c" />
   </bean>
