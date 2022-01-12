@@ -17,6 +17,7 @@ public class TP1 {
 	    Resource res = new ClassPathResource("applicationContext.xml");
 	    BeanFactory factory = new XmlBeanFactory(res);
 	    DemandeConge demandeConge = (DemandeConge) factory.getBean("demandeConge");
+	    System.out.println("mon premier commit modifié");
 	    System.out.println(demandeConge.toString());
    }
 
