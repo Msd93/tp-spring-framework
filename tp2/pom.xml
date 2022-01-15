@@ -9,12 +9,23 @@
 	<name>Spring TP2</name>
 	<version>1.0-SNAPSHOT</version>
 
+<<<<<<< HEAD
 	<properties>
 		<spring.version>2.5.6</spring.version>
 		<java.version>1.8</java.version>
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<maven.compiler.source>1.8</maven.compiler.source>
 	</properties>
+=======
+  <properties>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <java.version>1.8</java.version>
+    <spring.version>2.5.6</spring.version>
+    <spring.version>2.5.6</spring.version>
+  </properties>
+>>>>>>> 3e0228574377576d7a922d83f2af48598e0dde4a
 
 	<dependencies>
 

@@ -6,6 +6,7 @@
     http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
     http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd">
 
+<<<<<<< HEAD
 	<bean name="collaborateur" class="com.ecoalis.model.Collaborateur">
 		<property name="nom" value="DIALLO" />
 		<property name="prenom" value="Mamadou Seydou" />
@@ -20,6 +21,12 @@
 		<property name="dateDebut" value="19-01-2022 à 16:00" />
 		<property name="nbJours" value="29" />
 	</bean>
+=======
+  <bean autowire = "byName"  id="demandeConge" class="com.ecoalis.model.DemandeConge" scope="prototype">
+    <!--  property name="collaborateur" ref="c"></property-->
+    <!--  property name="periode" ref="p"></property-->
+  </bean>
+>>>>>>> 3e0228574377576d7a922d83f2af48598e0dde4a
 
 	<!-- Injection par Type -->
 	<bean id="demandeConge" class="com.ecoalis.model.DemandeConge"
@@ -38,4 +45,12 @@
 		class="com.ecoalis.model.DemandeCongeByName" autowire="byName">
 	</bean>
 
+<<<<<<< HEAD
+=======
+  <bean autowire = "constructor" id="demandeCongeSansModificateurs" class="com.ecoalis.model.DemandeCongeSansModificateurs">
+    <constructor-arg ref="p" />
+    <constructor-arg ref="c" />
+  </bean>
+  
+>>>>>>> 3e0228574377576d7a922d83f2af48598e0dde4a
 </beans>
