@@ -3,15 +3,24 @@ package com.ecoalis.model;
 import org.apache.commons.lang.builder.ToStringBuilder;
 import org.apache.commons.lang.builder.ToStringStyle;
 
-public class DemandeCongeSansModificateurs {
+public class DemandeCongeByName {
 
-	@SuppressWarnings("unused")
 	private Collaborateur collaborateur;
-	@SuppressWarnings("unused")
 	private Periode periode;
 
-	public DemandeCongeSansModificateurs(Collaborateur collaborateur, Periode periode) {
+	public Collaborateur getCollaborateur() {
+		return collaborateur;
+	}
+
+	public void setCollaborateur(Collaborateur collaborateur) {
 		this.collaborateur = collaborateur;
+	}
+
+	public Periode getPeriode() {
+		return periode;
+	}
+
+	public void setPeriode(Periode periode) {
 		this.periode = periode;
 	}
 
