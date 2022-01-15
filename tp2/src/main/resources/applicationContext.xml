@@ -23,8 +23,7 @@
 	</bean>
 	
 	<!-- Injection par Type -->
-	<bean id="demandeConge" class="com.ecoalis.model.DemandeConge"
-		autowire="byType">
+	<bean id="demandeConge" class="com.ecoalis.model.DemandeConge" autowire="byType">
 	</bean>
 
 	<!-- Injection par constructeur -->
