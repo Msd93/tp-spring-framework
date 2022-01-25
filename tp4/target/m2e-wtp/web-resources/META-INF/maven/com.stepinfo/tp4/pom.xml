@@ -64,6 +64,12 @@
           <target>1.5</target>
         </configuration>
       </plugin>
+      
+      <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-war-plugin</artifactId>
+            <version>3.3.1</version>
+        </plugin>
 
       <plugin>
         <groupId>org.mortbay.jetty</groupId>

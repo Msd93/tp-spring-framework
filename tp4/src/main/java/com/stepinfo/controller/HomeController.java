@@ -13,9 +13,8 @@ public class HomeController implements Controller {
 
    public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException,
             IOException {
-
-      response.getWriter().write("Ecriture directe dans HttpServletResponse");
-      return null;
+	   
+       return new ModelAndView("/WEB-INF/mes_pages/home.jsp");
    }
 
 }
