@@ -10,7 +10,7 @@
   <!-- Application context pour le DispatcherServlet -->
 
   <bean name="/home" class="com.stepinfo.controller.HomeController" />
-  <bean name="/home" class="com.stepinfo.controller.ListerController" />
+  <bean name="/home" class="com.stepinfo.controller.ListerDdcController" />
   <bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter"/>
   <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver" 			p:prefix="/WEB-INF/mes_pages/" p:suffix=".jsp"/>
 
