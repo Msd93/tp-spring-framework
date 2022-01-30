@@ -11,15 +11,12 @@ public class DemandeCongeByName {
 	public Collaborateur getCollaborateur() {
 		return collaborateur;
 	}
-
 	public void setCollaborateur(Collaborateur collaborateur) {
 		this.collaborateur = collaborateur;
 	}
-
 	public Periode getPeriode() {
 		return periode;
 	}
-
 	public void setPeriode(Periode periode) {
 		this.periode = periode;
 	}
