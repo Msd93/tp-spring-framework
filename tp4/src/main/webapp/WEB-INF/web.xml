@@ -4,7 +4,7 @@
   xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
   id="WebApp_ID" version="2.5">
   
-  <!--display-name>Ma webapp</display-name-->
+  <display-name>Ma webapp</display-name>
    <context-param>
     <param-name>contextConfigLocation</param-name>
     <param-value>/WEB-INF/applicationContext.xml</param-value>
@@ -33,7 +33,7 @@
   </servlet-mapping>
 
   <welcome-file-list>
-    <welcome-file>home.jsp</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
   </welcome-file-list>
 
 </web-app>
