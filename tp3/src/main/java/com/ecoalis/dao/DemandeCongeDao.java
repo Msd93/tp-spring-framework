@@ -4,5 +4,5 @@ import com.ecoalis.model.DemandeConge;
 
 public interface DemandeCongeDao {
 
-   DemandeConge getDemandeEnCours();
+	DemandeConge getDemandeEnCours();
 }
