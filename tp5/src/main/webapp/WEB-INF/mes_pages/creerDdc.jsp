@@ -11,8 +11,6 @@
 	<br /> Nous sommes le ${now}.
 	<br />
 	<br />
-
-
 	<br />
 	<br />
 
@@ -53,12 +51,8 @@
 				<td><form:errors path="nom" cssclass="error" /></td>
 			</tr>
 		</table>
-
 		<br />
-
 		<input type="submit" value="Valider" />
-
 	</form:form>
-
 </body>
 </html>

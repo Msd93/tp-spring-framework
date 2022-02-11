@@ -17,28 +17,23 @@ import com.stepinfo.validator.DemandeCongeValidator;
 @Controller
 @RequestMapping("/creerDdc")
 public class CreerDdcController {
-
 	@ModelAttribute("typeDdc")
 	public TypeDdc[] populateTypeDdc() {
 		return TypeDdc.values();
 	}
-
 	@ModelAttribute("demandeConge")
 	public DemandeConge getDdc() {
 		return new DemandeConge();
 	}
-
 	@RequestMapping(method = RequestMethod.GET)
 	public String setupForm(Model model) {
 		model.addAttribute("now", new SimpleDateFormat("dd/mm/yyyy").format(new Date()));
 		return "creerDdc";
 	}
-
 	@RequestMapping(method = RequestMethod.POST)
 	public String processSubmit(@ModelAttribute DemandeConge dc, BindingResult result) {
 		DemandeCongeValidator demandeCongeValidator = new DemandeCongeValidator();
 		demandeCongeValidator.validate(dc, result);
-
 		if (result.hasErrors()) {
 			System.out.println(result);
 		} else {
