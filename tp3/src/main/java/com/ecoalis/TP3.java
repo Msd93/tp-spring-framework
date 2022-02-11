@@ -17,7 +17,4 @@ public class TP3 {
 		System.out.println(demandeCongeService.getDemandeEnCours());
 	}
 
-	public static void main(String[] args) {
-		new TP3().go();
-	}
 }
