@@ -1,2 +1,2 @@
-# tp sur spring framework
+# tp-spring-framework
 Travaux pratique sur le framework SPRING
